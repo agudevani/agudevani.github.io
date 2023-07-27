@@ -1,0 +1,211 @@
+<html>
+
+<head>
+  <title>PERICIAS</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="Fecha">
+    <h2> Indicar Fecha Sinientro</h2>
+    <button> Seleccione una fecha
+
+      <body>
+        <form action="demo_form.asp">
+
+          <p style="color:black"></p> <input type="date" name="bday">
+
+        </form>
+  </div>
+  <form>
+    <h2 style="color:black">Cuales son los daños? Seleccione</h2>
+    <input type="checkbox" id="tejado" name="opciones" value="tejado">
+    <label for="tejado">Tejado</label><br>
+
+    <input type="checkbox" id="percianaTipoMallorquina" name="opciones" value="percianaTipoMallorquina">
+    <label for="percianaTipoMallorquina">Perciana tipo Mallorquina de ventana</label><br>
+
+    <input type="checkbox" id="puertaPersianaMallorquina" name="opciones" value="puertaPersianaMallorquina">
+    <label fors="puertaPersianaMallorquina">Puerta persiana Mallorquina</label><br>
+
+    <input type="checkbox" id="arbol" name="opciones" value="arbol">
+    <label for="arbol">Arbol</label><br>
+    <select id="arbolAdicionales" style="display: none;">
+      <option value="">Respecto al árbol, ¿forma parte de una zona que puede considerarse jardín?</option>
+      <option value="Si">Si</option>
+      <option value="No">No</option>
+    </select>
+    <select id="arbolAdicionales2" style="display: none;">
+      <option value="">¿El árbol se encuentra en buen estado en la zona donde quebró?</option>
+      <option value="Si">Si</option>
+      <option value="No">No</option>
+    </select>
+    <input type="checkbox" id="mobiliarioDeJardin" name="opciones" value="mobiliarioDeJardin">
+    <label for="mobiliarioDeJardin">Mobiliario de jardin</label><br>
+
+    <input type="checkbox" id="valladoMetalico" name="opciones" value="valladoMetalico">
+    <label for="valladoMetalico">Vallado metalico</label><br>
+
+    <input type="checkbox" id="muroPerimetral" name="opciones" value="muroPerimetral">
+    <label for="muroPerimetral">Muro perimetral</label><br>
+    <div id="opcionesAdicionales" style="display: none;">
+      <input type="checkbox" id="opcionesAdicionales" name="opcionesAdicionales" value="piedra seca">
+      <label for="piedra seca">Piedra Seca a una cara</label><br>
+
+      <input type="checkbox" id="opcionesAdicionales" name="opcionesAdicionales" value="PiedraSeca">
+      <label for="PiedraSeca">Piedra Seca a dos caras</label><br>
+
+
+      <input type="checkbox" id="opcionesAdicionales" name="opcionesAdicionales" value="otro">
+      <label for="opcionesAdicionales">otro</label><br>
+    </div>
+
+    <input type="checkbox" id="otro" name="opciones" value="otro">
+    <label for="otro">Otro</label><br>
+
+    <select id="daños" name="dañosAdicionales" value="daños">
+      <label for="daños">daños</label><br>
+      <select id="daños" style="display: none;">
+          <option value="">¿El daño presenta falta de mantenimiento o desgaste en la zona de empotramiento como
+            oxidación
+            o mal anclaje?</option>
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+          <label for="daños2">daños</label><br>
+          <select id="daños2" style="display: none;">
+            <select id="d" name="dañosAdicionales2" value="d">
+            <option value="">¿En la estación meteorológica de la AEMET más cercana al riesgo asegurado, supera el
+              umbral
+              establecido?
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+            </option>
+          </select>
+        </select>
+
+
+        <h2 style="color:black"> Que indica la poliza respecto al viento?Seleccione</h2>
+        <input type="checkbox" id="70" name="opciones" value="70">
+        <label for="70">Mayor a los 70 Km/h</label><br>
+
+        <input type="checkbox" id="80" name="opciones" value="80">
+        <label for="80">Mayor a los 80 Km/h</label><br>
+
+        <input type="checkbox" id="90" name="opciones" value="90">
+        <label fors="90">Mayor a los 90 Km/h</label><br>
+
+        <input type="checkbox" id="96" name="opciones" value="96">
+        <label for="96">Mayor a los 96 Km/h</label><br>
+
+        <input type="checkbox" id="vientoA" name="opciones" value="vientoA">
+        <label for="vientoA">Viento anormal</label><br>
+
+        <input type="checkbox" id="500" name="opciones" value="500">
+        <label for="500">Daños alrededor del riesgo asegurado dentro de los 500 m</label><br>
+
+        <label for="estacionPrivada">estacionPrivada</label><br>
+        <select id="estacionPrivada" style="display: none;">
+          <option value="">¿En las estaciones meteorológicas privadas como balearsmeteo o meteoclimatic, se verifica superación del umbral establecido en póliza?</option>
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+        <label for="estacionPrivada">estacionPrivada</label><br>
+        <select id="estacionPrivada" style="display: none;">
+          <option value="">¿En las estaciones meteorológicas privadas como balearsmeteo o meteoclimatic, se verifica superación del umbral establecido en póliza?</option>
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+        
+        <input type="checkbox" id="eventoAnormal" name="opciones" >
+        <select id="eventoAnormal" style="display: none;">
+          <label for="eventoAnormal"></label><option value="eventoAnormal">¿Se trata de un evento anormal que ha generado daños generalizados en la zona?</option></label><br>
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+    
+
+
+
+
+  </form>
+
+
+
+  <script>
+    document.getElementById("muroPerimetral").addEventListener("change", mostrarOpcionesAdicionalesMuroPerimetral);
+    document.getElementById("arbol").addEventListener("change", mostrarOpcionesAdicionales);
+    document.getElementById("arbolAdicionales").addEventListener("change", mostrarArbolesAdicionales);
+    document.getElementsByName("daños").addEventListener("change", mostrarOpcionesAdicionales);
+    document.getElementsByName("daños2").addEventListener("change", mostrarOpcionesAdicionales);
+    document.getElementsByName("dañosAdicionales").addEventListener("change", mostrarDañosAdicionales);
+    function mostrarOpcionesAdicionales() {
+      var arbol = document.getElementById("arbol");
+      var opcionesAdicionales = document.getElementById("arbolAdicionales");
+      if (arbol.checked) {
+        opcionesAdicionales.style.display = "block";
+      } else {
+        opcionesAdicionales.style.display = "none";
+      }
+    }
+    function mostrarArbolesAdicionales() {
+      var a = document.getElementById("arbol");
+      var arbol = document.getElementById("arbolAdicionales");
+      var opcionesAdicionales = document.getElementById("arbolAdicionales2");
+      if (arbol.value === "Si" && a.checked) {
+        opcionesAdicionales.style.display = "block";
+      } else {
+        opcionesAdicionales.style.display = "none";
+      }
+    }
+    function mostrarOpcionesAdicionalesMuroPerimetral() {
+      var muroPerimetral = document.getElementById("muroPerimetral");
+      var opcionesAdicionales = document.getElementById("opcionesAdicionales");
+      if (muroPerimetral.checked) {
+        opcionesAdicionales.style.display = "block";
+      } else {
+        opcionesAdicionales.style.display = "none";
+      }
+    }
+
+
+
+    function mostrarOpcionesAdicionales() {
+      var daños = document.getElementsByName("daños");
+      var opcionesAdicionales = document.getElementsByName("dañosAdicionales");
+      if (daños.checked) {
+        opcionesAdicionales.style.display = "block";
+      } else {
+        opcionesAdicionales.style.display = "none";
+      }
+    }
+    function mostrarDañosAdicionales() {
+      var daños = document.getElementsByID("daños");
+      var daños = document.getElementsByID("dañosAdicionales");
+      var opcionesAdicionales = document.getElementsByID("dañosAdicionales2");
+      if (daños.value === "Si" && d.checked) {
+        opcionesAdicionales.style.display = "block";
+      } else {
+        opcionesAdicionales.style.display = "none";
+      }
+    }
+    function mostrarValores() {
+      var valores = [];
+      for (var i = 0; i < document.querySelectorAll("input[type='checkbox']:checked").length; i++) {
+        valores.push(document.querySelectorAll("input[type='checkbox']:checked")[i].value);
+      }
+      var h1 = document.createElement("h1");
+      h1.textContent = "Los valores seleccionados son: " + valores.join(", ");
+      document.body.appendChild(h1);
+    }
+
+  </script>
+  <p></p>
+  </form>
+  <input type="submit" value="Enviar" onclick="mostrarValores()">
+
+
+
+</body>
+
+</html>
